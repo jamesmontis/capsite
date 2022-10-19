@@ -26,8 +26,7 @@ router.use(session({
 }));
 router.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// app.use(express.static(path.join(__dirname, 'views')));
-
+app.use(express.static(path));
 
 app.use("/",router);
 
@@ -41,7 +40,7 @@ router.use(function (req,res,next) {
 });
 
 router.get("/",function(req,res){
-  res.sendFile(path + "index.html");
+  res.sendFile(__dirname + "/index.html");
 }); 
 
 router.get("/login",function(req,res){
