@@ -1,110 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- ===== STYLE.CSS ===== -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- ===== CURRENTLY NO STYLE.CSS ===== -->
+    <link rel="stylesheet" href="style.css">
     <!-- ===== REMIXICON CDN ===== -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Texas A&M University Corpus Christi - the Island University</title>
   </head>
-  <body>
-    <!-- ===== OVERLAY ===== -->
-    <div class="overlay first"></div>
-    <div class="overlay second"></div>
-    <div class="overlay third"></div>
 
-    <!-- ===== CONTAINER'S ===== -->
-    <div class="left_container"></div>
-    <div class="right_container"></div>
 
-    <!-- ===== STRIPS ===== -->
-    <div class="strips">
-        <div class="left_strip"></div>
-        <div class="right_strip"></div>
+</head>
+<body>
+
+<div class="header">
+  <h1>Texas A&M University Corpus Christi - the Island University</h1>
+
+<!-- fix this image -->
+
+<img src="http://success.tamucc.edu/successlogo.png"/>
+  <p>Scholarships page</p>
+</div>
+
+<div class="topnav">
+  <a href="/about">About Us</a>
+  <a href="/login">Login</a>
+  <a href="/userdashboard">My Dashboard</a>
+  <a href="/scholarships"> <b>>> Apply Now <<</b> </a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Welcome</h2>
+    <p>This is the Scholarships portal for TAMUCC.
+      <br>
+      <br>
+      Here is where you can create an account and apply to available scholarships.
+      <br>
+    </p>
+  </div>
+  
+  <div class="column">
+    <h2><span>OVERVIEW: </h2>
+    <p>
+      Supporting Undergraduates for Careers in Computing and Engineering with Scholarships and Supervision (SUCCESS) has the goal of expanding the STEM pool by providing scholarships to academically talented and financially needy entering freshman or transferring regional community college students into engineering and computer science (ECS) majors at Texas A&M University-Corpus Christi (TAMU-CC), a Hispanic-Serving Institution, to allow them to complete a baccalaureate degree.
+      <br><br>
+      <ul style="list-style-type:square">
+            BENEFITS:
+      <br><br>
+      <li>$7,000 Scholarship award per academic year</li>
+      <li>Up to 8 semesters of funding ($28,000)</li>
+      <li>Undergraduate Research Fellowship Priority Consideration</li>
+      <li>Student-Student mentoring with a junior or senior TAMU-CC mentor
+      <li>Industry-Student mentoring from industry volunteers will mentor SUCCESS scholars</li>
+
+      <br><br>
+      SCHOLARSHIP ELIGIBILITY:
+      <br><br>
+      <li>Be accepted to TAMU-CC in Engineering or Computer Science major</li>
+      <li>US Citizen or US Permanent Resident></li>
+      <li>Demonstrate academic potential in an Engineering or Computer Science field</li>
+      <li>Maintain full-time enrollment in an Engineering or Computer Science major</li>
+      <li>Maintain cumulative GPA > 2.9</li>
+      <br><br>
+      SCHOLARSHIP APPLICATION REQUIREMENTS:
+      <br><br>
+      <li>Complete a SUCCESS Scholarship Application Form with three letters of recommendation</li>
+      <li>Write a 300-500 word essay describing your interest and goals for your major</li>
+      <li>Qualify for financial aid, as determined by TAMU-CC Financial Aid Office (must complete FAFSA form)</li>
+      <li>Submit a current resume</li>
+      <li>High school transcript(s)</li>
+    </p>
+      <br><br>
+    </span>
     </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p> Add Scholarhips UI here </p>
+  
+  </div>
+</div>
 
-    <!-- ===== NAVBAR ===== -->
-    <header>
-      <nav class="nav body_layout">
-        <div class="nav_insider">
-          <div class="logo">
-            <h3 class="nav__icon">TAMUCC</h3>
-          </div>
-
-          <div class="nav__menu" id="nav__menu">
-              <ul class="nav__list">
-                  <li class="nav__item"><a href="/about" class="nav__link">About</a></li>
-                  <li class="nav__item"><a href="/scholarships" class="nav__link">>> Apply here <<</a></li>
-                  <li class="nav__item"><a href="/login" class="nav__link">Login</a></li>
-                  <li class="nav__item"><a href="/userdashboard" class="nav__link">My Dashboard</a></li>
-                
-                  <li class="nav__item search_btn">
-                    <button class="search_btn">
-                      <i class="ri-search-line"></i>
-                    </button>
-                  </li>
-                  <li class="nav__item cart_btn">
-                    <button class="cart_btn">
-                        <i class="ri-shopping-bag-fill"></i>
-                    </button>
-                  </li>
-              </ul>
-          </div>  
-        </div>
-
-        <div class="cart_btn_wrapper">
-          <button class="search_btn"><i class="ri-search-line"></i></button>
-          <button class="cart_btn"> <i class="ri-shopping-bag-fill"></i></button>
-        </div>
-
-        <button class="menu_toggle_btn" id="menu_toggle_btn">
-          <i class="ri-menu-3-fill nav__icon"></i>
-        </button>
-      </nav>
-    </header>
-
-    <!-- ===== SOCIAL ===== -->
-    <div class="social">
-        <ul class="social__list">
-            <li class="social_item"><i class="ri-facebook-fill"></i></li>
-            <li class="social_item"><i class="ri-instagram-fill"></i></li>
-            <li class="social_item"><i class="ri-twitter-fill"></i></li>
-        </ul>
-    </div>
-
-    <!-- ===== PRODUCT-IMAGE ===== -->
-    <img src="./img/successlogo.png" class="product_img" alt="product_img">
-
-    <!-- ===== PRODUCT-INFO ===== -->
-    <div class="product_text">
-      <h1 class="product_title">Scholarships <sup>&reg;</sup></h1>
-      <p class="product_type">test 1spot</p>
-    </div>
-
-    <!-- ===== BOTTOM-NAV ===== -->
-    <div class="bottom_nav">
-        <div class="slide_nav_wrapper">
-            <button class="prev direction_btn"><i class="ri-arrow-right-s-line"></i></button>
-            <button class="next direction_btn"><i class="ri-arrow-left-s-line"></i></button>
-        </div>
-        <div class="dots_wrapper">
-          <ul class="dots">
-            <li class="dot"></li>
-            <li class="dot"></li>
-            <li class="dot active"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-
-          </ul>
-        </div>
-    </div>
-
-    <!-- ===== GSAP CDN ===== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <!-- ===== SCRIPT.JS ===== -->
-    <script src="./js/script.js"></script>
-  </body>
+</body>
 </html>
