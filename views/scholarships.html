@@ -1,9 +1,16 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>Scholarships </h1>
-<p> words for paragraph.</p>
-
-</body>
-</html>
+<table>
+  <thead>
+    <th>id</th>
+    <th>name</th>
+  </thead>
+  <tbody id="place-here"></tbody>
+</table>
+<script>
+  $.get('/getData', {}, function(result) {
+    let res = '';
+    result.forEach(data => {
+      res += `<tr><td>${data.scholarshipID}</td><td>${data.scholarshipName}</td></tr>`
+    })
+    $('scholarships').html(res)
+  });
+</script>

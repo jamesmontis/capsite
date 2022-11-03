@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/jamesmontis/capsite/issues"
   },
-  "homepage": "https://github.com/jamesmontis/capsite#readme"
+  "homepage": "https://github.com/jamesmontis/capsite#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
+    "express-flash": "^0.0.2",
+    "express-validator": "^6.14.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.3"
+  }
 }
